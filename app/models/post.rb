@@ -3,7 +3,6 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 
-
   def update_posts_count
     author.increment!(:posts_counter)
   end
