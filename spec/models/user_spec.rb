@@ -13,7 +13,6 @@ RSpec.describe User, type: :model do
       user.valid?
       expect(user.errors[:posts_counter]).to include('is not a number')
 
-
       user.posts_counter = -1
       user.valid?
       expect(user.errors[:posts_counter]).to include('must be greater than or equal to 0')
