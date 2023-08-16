@@ -135,7 +135,7 @@ rspec
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Isuues Pages](https://github.com/ragangithub/Blog_app.git/issues)
+Feel free to check the [Isuues Pages](https://github.com/ragangithub/Blog_app/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
