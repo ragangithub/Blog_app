@@ -1,7 +1,20 @@
 require 'rails_helper'
 
-RSpec.describe 'Users', type: :request do
-  describe 'GET /index' do
-    pending "add some examples (or delete) #{__FILE__}"
+RSpec.describe 'UsersController', type: :request do
+  describe 'GET index' do
+    it 'returns a successful response' do
+      get users_path
+      expect(response).to be_successful
+    end
+
+    it 'renders the index template' do
+      get users_path
+      expect(response).to render_template(:index)
+    end
+
+    it 'includes the correct placeholder text in the response body' do
+      get users_path
+      expect(response.body).to include('Here is a list of users')
+    end
   end
 end
