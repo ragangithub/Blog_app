@@ -17,4 +17,22 @@ RSpec.describe 'UsersController', type: :request do
       expect(response.body).to include('Here is a list of users')
     end
   end
+
+
+  describe 'GET #show_post' do
+    it 'renders the show_post template' do
+      get '/users/1'
+      expect(response).to render_template('users/show')
+    end
+
+    it 'returns a 200 OK status' do
+      get '/users/1'
+      expect(response).to have_http_status(:ok)
+    end
+
+    it 'includes the correct placeholder text in the response body' do
+      get '/users/1'
+      expect(response.body).to include('Here is detail of a given user')
+    end
+  end
 end
