@@ -18,9 +18,8 @@ RSpec.describe 'UsersController', type: :request do
     end
   end
 
-
-  describe 'GET #show_post' do
-    it 'renders the show_post template' do
+describe 'GET #show_user' do
+    it 'renders the show_user template' do
       get '/users/1'
       expect(response).to render_template('users/show')
     end
