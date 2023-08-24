@@ -39,11 +39,19 @@
     <% end %>
 
    <div class="buttons">
-    <button>
-        <%= link_to 'Pagination', user_post_path(@user, @posts.first) %>
-      </button>
+
+   <% if @posts.present? %>
+  <button>
+    <%= link_to 'Pagination', user_post_path(@user, @posts.first) %>
+  </button>
+<% end %>
+    
     <button class="back-all-users">
       <%= link_to "Back to all users", root_path %>
     </button>
+
+    <button class="new-post">
+    <%= link_to "Add a new post", new_user_post_path(@user) %>
+  </button>
   </div>
 </div>
