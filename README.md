@@ -117,6 +117,11 @@ rspec
 - GitHub: [ragan](https://github.com/ragangithub)
 - LinkedIn: [Ragan Hailu](https://linkedin.com/in/raganhailu)
 
+👤 **A.I.M. Shihab Uddin Khan**
+
+- GitHub: [Khan](https://github.com/shihabrafio)
+- LinkedIn: [Khan](https://linkedin.com/in/in/shihab-uddin-khan-45620a16a)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -151,7 +156,7 @@ If you like this project kindly give it a star⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse.
+We would like to thank Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
