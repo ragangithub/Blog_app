@@ -1,9 +1,11 @@
 class Ability
   include CanCan::Ability
+
   def initialize(user)
     user ||= User.new
-    if user.admin?
-        can :manage, :all
+    if user.role == 'admin'
+      can :manage, :all
+
     else
       can :destroy, Post do |post|
         post.author == user
@@ -11,5 +13,9 @@ class Ability
       can :destroy, Comment do |comment|
         comment.author == user
       end
-   end
+      can :create, Post
+      can :create, Comment
+      can :read, :all
+    end
+  end
 end
