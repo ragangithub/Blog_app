@@ -1,9 +1,16 @@
 class PostsController < ApplicationController
   load_and_authorize_resource
+  rescue_from CanCan::AccessDenied do |_exception|
+    redirect_to root_path, notice: 'Access denied'
+  end
   def index
     @posts = Post.all
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:author, comments: :author)
+    respond_to do |format|
+      format.html
+      format.json { render json: @posts }
+    end
   end
 
   def show
