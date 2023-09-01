@@ -23,7 +23,6 @@ class CommentsController < ApplicationController
     @comment.post = @post
     @comment.author = current_user
 
-
     respond_to do |format|
       if @comment.save
         format.html { redirect_to user_post_path(@user, @post), notice: 'Comment was created successfully' }

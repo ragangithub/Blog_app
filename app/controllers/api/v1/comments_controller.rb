@@ -4,7 +4,6 @@ class Api::V1::CommentsController < ApplicationController
     redirect_to root_path, notice: 'Access denied'
   end
 
-
   def index
     @post = Post.find(params[:post_id])
     @comments = @post.comments
