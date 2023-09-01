@@ -120,7 +120,7 @@ rspec
 👤 **A.I.M. Shihab Uddin Khan**
 
 - GitHub: [Khan](https://github.com/shihabrafio)
-- LinkedIn: [Khan](https://linkedin.com/in/in/shihab-uddin-khan-45620a16a)
+- LinkedIn: [Khan](https://www.linkedin.com/in/aimshihabuddinkhan/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
