@@ -25,7 +25,7 @@
 
 # 📖 Blog App <a name="about-project"></a>
 
-- This is a ruby on rails project
+- This is a ruby on rails project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
